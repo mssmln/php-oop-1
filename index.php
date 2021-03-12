@@ -27,7 +27,14 @@ class Movie{
     }
 }
 
+// prima istanza 
 $nameMovie = new Movie('Batman v Superman');
 $nameMovie->genre = 'fantasy';
 echo $nameMovie->genre;
 echo $nameMovie->lingua('eng');
+
+// seconda istanza
+$nameMovie2 = new Movie('Godzilla v Kong');
+$nameMovie2->duration = '2 ore';
+echo $nameMovie2->lingua('eng');
+echo $nameMovie2->duration;
